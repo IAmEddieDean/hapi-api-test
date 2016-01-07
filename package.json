@@ -1,7 +1,7 @@
 {
-  "name": "aphrodite",
+  "name": "Close5 ",
   "version": "0.0.1",
-  "homepage": "https://github.com/coding-house-apr2015/aphrodite",
+  "homepage": "https://github.com/iameddiedean/close5",
   "author": "Chris Oyler <christopher.oyler@gmail.com>",
   "license": "MIT",
   "engines": {
@@ -12,8 +12,7 @@
   },
   "scripts": {
     "start": "node app.js",
-    "test": "lab -v -c -t 100 -L -n eslint -e test",
-    "coverage": "lab -s -r lcov | coveralls"
+    "setup": "mongoimport --jsonArray --drop --db close5-test-co --collection items --file db.json",
   },
   "dependencies": {
     "blipp": "^2.1.3",
@@ -24,11 +23,5 @@
     "mongoose": "^4.0.3",
     "socket.io": "^1.3.5",
     "travis-encrypt": "^1.1.1"
-  },
-  "devDependencies": {
-    "chai": "^2.3.0",
-    "coveralls": "^2.11.2",
-    "lab": "^5.8.1",
-    "sinon": "^1.14.1"
   }
 }
