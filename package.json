@@ -8,7 +8,8 @@
     "node": "0.12.x"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "reset": "curl -i -X GET http://localhost:8080/reset"
   },
   "dependencies": {
     "blipp": "^2.1.3",
