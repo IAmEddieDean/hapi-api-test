@@ -1,42 +1,41 @@
 <style>
-* {
-  font-family: sans-serif;
-}
-table {
-  margin-bottom: 1rem;
-  border-radius: 0;
-  width: 100%;
-  table-layout: fixed;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-tbody {
-  background: #f8f8f8;
-  color: #0a0a0a;
-}
-th {
-  color: white;
-  background-color: #F23D3E;
-  padding: 0;
-  font-weight: bold;
-}
-td, th {
-  padding: 0.5rem 0.625rem 0.625rem;
-  text-align: center;
-  border: solid thin black;
-}
-td {
-  overflow: hidden;
-}
-tbody tr:nth-child(even) {
-  background-color: #f1f1f1;
-}
-
-  
+  * {
+    font-family: sans-serif;
+  }
+  table {
+    margin-bottom: 1rem;
+    border-radius: 0;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  tbody {
+    background: #f8f8f8;
+    color: #0a0a0a;
+  }
+  th {
+    color: white;
+    background-color: #F23D3E;
+    padding: 0;
+    font-weight: bold;
+  }
+  td, th {
+    padding: 0.5rem 0.625rem 0.625rem;
+    text-align: center;
+    border: solid thin black;
+  }
+  td {
+    overflow: hidden;
+  }
+  tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+  }
 </style>
 
 <h1>Close5 Code Challenge</h1>
-<p>First off, thanks for the opportunity to present this challenge. <br> It's been a while since I last worked in Node, and I had kind forgotten how much fun it was.</p>
+<h3>Christopher Oyler - <a href="mailto:christopher.oyler@gmail.com?Subject=Hello%20from%20space!">christopher.oyler@gmail.com</a> - <a href="tel:5125975236">512-587-5236</a></h3>
+<p>First off, thanks for the opportunity to present this challenge. <br> It's been a while since I last worked in Node, and I had kind of forgotten how much fun it was.</p>
 
 <table>
   <thead>
@@ -63,8 +62,8 @@ tbody tr:nth-child(even) {
     <tr>
       <td>/items/{long}/{lat}/{dist?}</td>
       <td>long: longitudinal coordinate <br>
-          lat: a latitudinal coordinate <br>
-          dist: the maximum distance, in miles, to search for items, optional, defaults to 50.
+        lat: a latitudinal coordinate <br>
+        dist: the maximum distance, in miles, to search for items, optional, defaults to 50.
       </td>
       <td>Sorting parameters as a query string, e.g. <br> /items?price=1</td>
       <td>Return a collection of items within a radius of the client, default sorted by distance, optionally sorted by other properties in a query string. If no items found, return code 204.</td>
